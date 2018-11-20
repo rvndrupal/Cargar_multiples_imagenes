@@ -24,12 +24,12 @@
             
         </div>
 
-        {{--  <div class="from-group">    
+        <div class="from-group">    
                 {!! Form::label('iframe','Video') !!}
                 
                 {!! Form::text('iframe', null, ['class' => 'form-control']) !!}   
                 
-        </div>  --}}
+        </div>
         
         <hr>
         <div class="form-group ocultar">

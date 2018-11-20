@@ -16,6 +16,13 @@
     
 </div>
 
+<div class="from-group">    
+    {!! Form::label('iframe','Video') !!}
+    
+    {!! Form::text('iframe', null, ['class' => 'form-control']) !!}   
+    
+</div>
+
 <hr>
 <div class="form-group">
     <div class="dropzone"></div>

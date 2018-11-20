@@ -54,6 +54,13 @@
             @endforeach                
             @endif
 
+            {{-- video --}}
+            @if($product->iframe)
+            <div class="video">
+                {!! $product->iframe !!}
+            </div>
+            @endif
+
 
 
                 </div>
