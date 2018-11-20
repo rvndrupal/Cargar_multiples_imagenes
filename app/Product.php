@@ -7,11 +7,15 @@ use Illuminate\Database\Eloquent\Model;
 class Product extends Model
 {
     protected $fillable = [
-        'name', 'description','iframe',
+        'name', 'description','iframe','category_id',
     ];
 
     public function fotos()
     {
         return $this->hasMany(Foto::class);
+    }
+
+    public function category(){
+        return $this->belongsTo(Category::class);  
     }
 }

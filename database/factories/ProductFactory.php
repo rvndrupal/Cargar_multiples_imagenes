@@ -7,5 +7,6 @@ $factory->define(App\Product::class, function (Faker $faker) {
         'name'=> $faker->sentence,
         'description'=> $faker->sentence,
         'iframe'=> $faker->sentence,
+        'category_id' => rand(1,5),
     ];
 });

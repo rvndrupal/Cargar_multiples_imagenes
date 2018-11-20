@@ -29,7 +29,7 @@
           @can('products.index')
         <li><a href="{{ route('products.index') }}"><i class="fa fa-eye"></i>Productos</a></li>
          @endcan
-        <li><a href="#">Link in level 2</a></li>
+        <li><a href="{{ route('categories.index') }}"><i class="fa fa-eye"></i>Categorias</a></li>
       </ul>
     </li>
   </ul>

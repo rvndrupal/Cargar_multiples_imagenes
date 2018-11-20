@@ -23,10 +23,19 @@
     
 </div>
 
+<div class="from-group">    
+    {!! Form::label('category_id','Categorías') !!}
+    
+    {!! Form::select('category_id', $categories , null , ['class' => 'form-control']) !!}   <!--Se obtiene la categoria-->
+    
+</div>
+
 <hr>
 <div class="form-group">
     <div class="dropzone"></div>
 </div>
+
+
 
 <div class="from-group">    
         

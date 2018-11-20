@@ -23,6 +23,8 @@
                 <div class="panel-body">
                 <p> <strong>Nombre</strong> {{ $product->name }}</p>
                 <p> <strong>Descripción</strong> {{ $product->description }}</p>
+                <p> <strong>Categoria</strong> {{ $product->category->nombre }}</p>
+                <p> <strong>Descripción</strong> {{ $product->category->descripcion }}</p>
 
                 @if($product->fotos->count()===1)
                 
