@@ -1,0 +1,26 @@
+.imagen0 {
+    width: 800px;
+    height: 400px;
+}
+
+.dos_1,
+.dos_2 {
+    width: 400px;
+    height: 200px;
+}
+
+.tres_1 {
+    width: 800px;
+    height: 400px;
+}
+
+.tres_2,
+.tres_3 {
+    width: 400px;
+    height: 200px;
+}
+
+.video iframe {
+    width: 800px;
+    margin: 46px 0 0 0px;
+}
