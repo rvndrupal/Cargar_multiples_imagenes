@@ -15,7 +15,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
 
-                    Busqueda de Categoria
+                    {{--  Busqueda de Categoria
                     {{ Form::open(['route'=>'categories.pdf', 'method'=>'GET','class'=>'form-inline pull-right']) }}
                     <div class="form-group">
                         {{ Form::text('nombre',null,['class'=>'form-control','placeholder'=>'Nombre']) }}
@@ -27,7 +27,7 @@
                         </button>
                     </div>
 
-                    {{ Form::close() }}
+                    {{ Form::close() }}  --}}
 
 
 

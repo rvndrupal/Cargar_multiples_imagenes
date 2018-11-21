@@ -94,10 +94,9 @@ class CategoryController extends Controller
 
     public function pdf(Request $request, Category $category){
         
-        $nombre=$request->get('nombre');
+       // $nombre=$request->get('nombre');
 
-        $categorias=Category::orderBy('id','DESC')
-        ->nombre($nombre);
+        $categorias=Category::orderBy('id','DESC')->get();
 
         $pdf = \PDF::loadView('pdf.categorias', compact('categorias') );
         return $pdf->download('categorias.pdf');
@@ -106,3 +105,4 @@ class CategoryController extends Controller
        
     }
 }
+
