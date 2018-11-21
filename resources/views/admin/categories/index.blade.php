@@ -14,10 +14,32 @@
         <div class="col-md-12 ">
             <div class="panel panel-default">
                 <div class="panel-heading">
+
+                    Busqueda de Categoria
+                    {{ Form::open(['route'=>'categories.pdf', 'method'=>'GET','class'=>'form-inline pull-right']) }}
+                    <div class="form-group">
+                        {{ Form::text('nombre',null,['class'=>'form-control','placeholder'=>'Nombre']) }}
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-default">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </div>
+
+                    {{ Form::close() }}
+
+
+
                     Etiquetas
+                    @can('categories.pdf')
+                    <a href="{{ route('categories.pdf') }}" class="btn btn-sm btn-info pull-right">PDF</a>
+                    @endcan
                     @can('categories.create')
                     <a href="{{ route('categories.create') }}" class="btn btn-sm btn-primary pull-right">Nuevo</a>
                     @endcan
+
+                   
                 </div>
 
                 <div class="panel-body">

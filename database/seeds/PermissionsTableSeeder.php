@@ -158,6 +158,13 @@ class PermissionsTableSeeder extends Seeder
             'description'  => 'Eliminar cualquier Categoria del sistema',
 
         ]);
+
+        Permission::create([
+            'name' => 'Crear PDF',
+            'slug' => 'categories.pdf',
+            'description'  => 'Crear Pdf de la Categoria.',
+
+        ]);
         //CATEGORIAS
     }
 }

@@ -91,4 +91,18 @@ class CategoryController extends Controller
         $category->delete();
         return back()->with('info','Eliminado Correctamente');
     }
+
+    public function pdf(Request $request, Category $category){
+        
+        $nombre=$request->get('nombre');
+
+        $categorias=Category::orderBy('id','DESC')
+        ->nombre($nombre);
+
+        $pdf = \PDF::loadView('pdf.categorias', compact('categorias') );
+        return $pdf->download('categorias.pdf');
+        
+        
+       
+    }
 }

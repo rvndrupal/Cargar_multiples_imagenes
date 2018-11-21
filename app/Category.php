@@ -10,5 +10,13 @@ class Category extends Model
         'nombre','descripcion'
     ];  
 
+    //scope busqueda por nombre
+    public function scopeNombre($query, $nombre)
+    {
+        if ($nombre) {
+            return $query->where('nombre', 'LIKE', "%$nombre%");
+        }
+    }
+
    
 }

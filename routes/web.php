@@ -146,4 +146,7 @@ Route::middleware(['auth'])->group(function(){
     Route::get('categories/{category}/edit', 'CategoryController@edit')->name('categories.edit')
     ->middleware('permission:categories.edit');
 
+    Route::get('pdf', 'CategoryController@pdf')->name('categories.pdf')
+    ->middleware('permission:categories.pdf');
+
 });
